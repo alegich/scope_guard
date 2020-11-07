@@ -20,3 +20,7 @@ set(HEADER_FILES
 
 add_executable(${TARGET_NAME} ${SOURCE_FILES} ${HEADER_FILES})
 
+target_include_directories(${TARGET_NAME}
+	PUBLIC
+		$<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/include>
+)
