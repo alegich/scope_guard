@@ -18,5 +18,5 @@ set(HEADER_FILES
 	include/scope_guard.h
 )
 
-add_executable(${TARGET_NAME} ${SOURCE_LIST} ${HEADER_LIST})
+add_executable(${TARGET_NAME} ${SOURCE_FILES} ${HEADER_FILES})
 
